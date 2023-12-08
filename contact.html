@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/contact.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&family=Raleway&display=swap"
       rel="stylesheet"
@@ -41,30 +41,40 @@
       </div>
     </div>
 
-    <div class="about-section">
-      <div class="name-div"><h1 class="name">ABOUT</h1></div>
-      <hr style="width: 80px; margin-top: 60px; margin-left: -70px;" />
-      <div class="text-area">
-        <p class="text1">
-          I'm a paragraph. Click here to add your own text and edit me. It’s
-          easy. Just click “Edit Text” or double click me and you can start
-          adding your own content and make changes to the font. Feel free to
-          drag and drop me anywhere you like on your page. I’m a great place for
-          you to tell a story and let your users know a little more about you.
-        </p>
-        <br>
-        <p class="text2">
-          ​This is a great space to write long text about your company and your
-          services. You can use this space to go into a little more detail about
-          your company. Talk about your team and what services you provide. Tell
-          your visitors the story of how you came up with the idea for your
-          business and what makes you different from your competitors. Make your
-          company stand out and show your visitors who you are.
-        </p>
+    <div class="contact-info">
+      <div class="name">
+        CONTACT
+        <hr style="width: 80px" />
       </div>
-      <div class="about-img">
-        <img src="css/aboutImg.png" alt="">
+
+      <div class="contact-form">
+        <div class="address">
+          <p>500 Terry Francine St.</p>
+          <p>San Francisco, CA 94158</p>
+          <p>info@mysite.com</p>
+          <p>Tel:123-456-7890</p>
+        </div>
+        <div class="form">
+          <div class="inputs">
+            <input type="text" name="Name" placeholder="Name" />
+            <label for="Name"></label>
+            <input type="text" name="Email" placeholder="Email" />
+            <label for="Name"></label>
+            <input type="text" name="Subject" placeholder="Subject" />
+            <label for="Name"></label>
+          </div>
+
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Message"
+            style="height: 100px"
+          ></textarea>
+    
+          <input type="submit" value="Submit" class="submit-btn" />
+        </div>
       </div>
+      <img src="css/street.png" alt="">
     </div>
   </body>
 </html>
