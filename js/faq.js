@@ -23,3 +23,28 @@ navSlider();
 const tl = gsap.timeline({ defaults: { ease: "power1.out" } });
 
 gsap.fromTo(".qa-section", { opacity: 0 }, { opacity: 1, duration: 2 });
+
+var modalBtn = document.querySelector(".modal-btn");
+var modalBg = document.querySelector(".modal-bg");
+var modalClose = document.querySelector(".modal-close");
+var loginBtn = document.querySelector(".loginBtn");
+
+modalBtn.addEventListener("click", function () {
+  modalBg.classList.add("bg-active");
+});
+
+modalClose.addEventListener("click", function () {
+  modalBg.classList.remove("bg-active");
+});
+
+function validateLogin() {
+  var username = document.getElementById("loginName").value;
+  var password = document.getElementById("passwordLogin").value;
+  var email = document.getElementById("emailLogin").value;
+
+  if (username === "" || password === "" || email === "") {
+    alert("Please enter both username and password and email");
+  } else {
+    alert("Login successful!");
+  }
+}

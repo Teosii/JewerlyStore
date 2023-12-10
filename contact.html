@@ -32,17 +32,39 @@
           <li><a href="about.html">About</a></li>
           <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html">Contact</a></li>
-          <span class="login"
-            ><li>
-              <a href=""> <i class="fa-solid fa-circle-user"></i> Log In</a>
-            </li></span
-          >
+          <button class="modal-btn">
+            <span class="login"
+              ><li>
+                <a href="">
+                  <i class="fa-solid fa-circle-user logIn"></i> Log In</a
+                >
+              </li></span
+            >
+          </button>
         </ul>
-          <div class="burger">
+        <div class="burger">
           <div class="line1"></div>
           <div class="line2"></div>
           <div class="line3"></div>
         </div>
+      </div>
+    </div>
+
+    <div class="modal-bg">
+      <div class="modal">
+        <h2>Log In</h2>
+        <p>Enter your credentials</p>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="loginName" />
+        <label for="password">Password</label>
+        <input type="password" name="password" id="passwordLogin" />
+        <label for="email">Email</label>
+        <input type="email" id="emailLogin" name="email" />
+        <button class="loginBtn" onclick="validateLogin()">Log In</button>
+        <button onclick="validateRegister()">
+          <a class="registerBtn" href="signup.html">Register</a>
+        </button>
+        <span class="modal-close">X</span>
       </div>
     </div>
 
@@ -75,11 +97,11 @@
             placeholder="Message"
             style="height: 100px"
           ></textarea>
-    
+
           <input type="submit" value="Submit" class="submit-btn" />
         </div>
       </div>
-      <img src="css/street.png" alt="">
+      <img src="css/street.png" alt="" />
     </div>
 
     <script src="js/contact.js"></script>
